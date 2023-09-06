@@ -29,6 +29,12 @@ table {
 th.theme_name{
     border-bottom: medium steelblue ridge;
 }
+th,td{
+    width: 30%;
+}
+input{
+    width: 100%;
+}
 
 /*Button_Design*/
 a.button_blue{
