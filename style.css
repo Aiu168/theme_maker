@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/*Header_Design*/
+header{
+    background-color: steelblue;
+    text-align: center;
+}
+#page_title{
+    color: azure;
+}
+
+/*Body_Design*/
+body{
+    background-color: azure;
+    color: midnightblue;
+    text-align: center;
+}
+#overview{
+    color: midnightblue;
+}
+div.button_group{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th.theme_name{
+    border-bottom: medium steelblue ridge;
+}
+
+/*Button_Design*/
+a.button_blue{
+    color: azure;
+    text-decoration: none;
+    background-color: steelblue;
+    border-radius: 5rem;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+a.button_blue:hover{
+    color: azure;
+    text-decoration: none;
+    background-color: midnightblue;
+}
+
+/*Modal_Window_Design*/
+.layer{
+    background: rgba(0,0,0,0.2);
+    z-index: -1;            /*初期表示時はモーダルウィンドウは最背面*/
+    opacity: 0;             /*初期表示時はモーダルウィンドウを透過*/
+    visibility: hidden;     /*初期表示時は背景は非表示*/
+}
+
+.modal{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 10em;
+}
+
+/*Footer_Design*/
+footer{
+    background-color: steelblue;
+    text-align: center;
+}
+#footer_version{
+    color: azure;
+}

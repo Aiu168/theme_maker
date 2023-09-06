@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Maker v1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./Theme_Maker.js"></script>
+</head>
+<header>
+    <h1 id="page_title">お題メーカー</h1>
+</header>
+<body>
+    <p id="overview">自分で登録した単語からランダムにお題を生成します!</p>
+    
+    <div class="button_group">
+        <a href="" class="button_blue js-modal-button" onclick="setWords()">単語登録</a>
+        <a href="" class="button_blue js-modal-button" onclick="clearWords()">クリア</a>
+        <a href="" class="button_blue js-modal-button" onclick="createTheme()">お題生成</a>    
+    </div>
+
+    <!--単語登録ボタン押下時のモーダルウィンドウ-->
+<!--
+    <div class="layer js-modal">
+        <div class="modal">
+            登録完了!
+        </div>
+    </div>
+-->
+    <table id="tbl">
+        <thead>
+            <tr>
+                <th>テーマ1</th>
+                <th>テーマ2</th>
+                <th>テーマ3</th>    
+            </tr>
+            <tr>
+                <th class="theme_name"><input type="text" id="theme1"></th>
+                <th class="theme_name"><input type="text" id="theme2"></th>
+                <th class="theme_name"><input type="text" id="theme3"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" id="text1_1"></td>
+                <td><input type="text" id="text2_1"></td>
+                <td><input type="text" id="text3_1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="text1_2"></td>
+                <td><input type="text" id="text2_2"></td>
+                <td><input type="text" id="text3_2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="text1_3"></td>
+                <td><input type="text" id="text2_3"></td>
+                <td><input type="text" id="text3_3"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="text1_4"></td>
+                <td><input type="text" id="text2_4"></td>
+                <td><input type="text" id="text3_4"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="text1_5"></td>
+                <td><input type="text" id="text2_5"></td>
+                <td><input type="text" id="text3_5"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--
+    <div class="button_group">
+        <a href="" class="button_blue" onclick="addColumn()">+</a></td>
+    </div>
+    -->
+</body>
+<footer>
+    <p id="footer_version">2023.09.01 v1.0</p>
+</footer>
+</html>
